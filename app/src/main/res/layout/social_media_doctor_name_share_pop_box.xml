@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:text="@string/share"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/_16sdp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_close_white"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="@dimen/_1sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+                <Button
+                    android:id="@+id/socilaMediaSharebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_corner_primary_button"
+                    android:fontFamily="OpenSans-Regular.ttf"
+                    android:text="@string/Social"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <View
+                android:layout_width="@dimen/_4sdp"
+                android:layout_height="1dp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+                <Button
+                    android:id="@+id/searchByDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_corner_primary_button"
+                    android:fontFamily="OpenSans-Regular.ttf"
+                    android:text="@string/doctor"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

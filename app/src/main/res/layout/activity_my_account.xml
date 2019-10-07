@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MyAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtEditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/EditInfo"
+            android:textColor="@color/white" />
+
+        <ScrollView
+            android:layout_above="@id/txtEditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/primary">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        app:mrl_rippleAlpha="0.1"
+                        app:mrl_rippleColor="@color/rippelColor"
+                        app:mrl_rippleDelayClick="false"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:src="@drawable/ic_action_back" />
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/imgBack"
+                        android:layout_toRightOf="@+id/imgBack"
+                        android:gravity="center_vertical"
+                        android:text="My Account"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/accent" />
+
+                <RelativeLayout
+                    android:id="@+id/linearLayoutProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imageUserProfile"
+                                android:layout_width="@dimen/_102sdp"
+                                android:layout_height="@dimen/_102sdp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/user_blue"
+                                android:visibility="visible"
+                                app:civ_border_color="@color/divider2"
+                                app:civ_border_overlay="true"
+                                app:civ_border_width="@dimen/_2sdp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_12sdp">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Name : "
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtUserName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Gender : "
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtGender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Date of Birth : "
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtDob"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Blood Group : "
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtBloodGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_5sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Mobile Number : "
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtMobileNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_11sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Email Id : "
+                                    android:textSize="@dimen/_11sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_11sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:text="Wallet Points : "
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                    android:id="@+id/txtWalletPoints"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/_4sdp"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <RelativeLayout
+
+                        android:id="@+id/layoutCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/cardView">
+
+
+                        <RelativeLayout
+                            android:id="@+id/layoutCardOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/border_one">
+
+                            <RelativeLayout
+                                android:id="@+id/layoutTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/border_two">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imgLogo"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="10dp"
+                                        android:src="@drawable/helth_ministry"
+                                        android:layout_marginLeft="10dp" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_toEndOf="@id/imgLogo"
+                                        android:text="महाराष्ट्र शासन\nसार्वजनिक आरोग्य विभाग "
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_toRightOf="@id/imgLogo" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/satyamev" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="10dp">
+
+                                        <ImageView
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_gravity="center"
+                                            android:src="@drawable/maharashtra_govt_logo" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="-3dp"
+                                            android:text="महाराष्ट्र शासन "
+                                            android:textAlignment="center"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/layoutFirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/layoutTop"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp">
+
+
+                                <ImageView
+                                    android:id="@+id/imgUser"
+                                    android:layout_width="65dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginTop="5dp"
+                                    tools:src="@drawable/logo" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:id="@+id/txCard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:text=" महाराष्ट्र आरोग्य कार्ड "
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="22sp" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="10dp"
+                                    app:srcCompat="@drawable/ic_whr_white_logo_two"
+                                    android:layout_alignParentRight="true" />
+
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layoutDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/layoutFirst"
+                                android:layout_margin="10dp"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="4"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="55dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Name"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtName"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="55dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Blood"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtBloodGroupHealth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="55dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Gender"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtGenderHealth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="55dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Mob"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtMobile"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Emergency No."
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtEmergencyMobile"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="8208441290" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:orientation="horizontal">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="55dp"
+                                            android:layout_height="wrap_content"
+                                            android:text="Address"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtAddress"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:orientation="vertical"
+                                    android:layout_marginLeft="10dp">
+
+                                    <ImageView
+                                        android:id="@+id/imgBarcode"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        tools:src="@drawable/qr_code" />
+
+
+                                    <LinearLayout
+                                        android:id="@+id/layoutBarcode"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Dob"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                            android:id="@+id/txtDobHealth"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp"
+                                            tools:text="" />
+
+
+                                    </LinearLayout>
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:id="@+id/txtHealtId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        tools:text="" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/layoutCardTwo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layoutCardOne"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/border_one"
+                            android:orientation="vertical">
+
+                            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                                android:id="@+id/txtTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/primary"
+                                android:textSize="14sp"
+                                tools:text="title" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/primary"
+                                android:textAlignment="center" />
+
+                            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                android:id="@+id/txtsubTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                tools:text="asdfgasdfasdflormelormelrem" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/primary"
+                                android:textAlignment="center" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:drawableTop="@drawable/ic_telephone"
+                                    android:text="8698210210"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:drawableTop="@drawable/ic_web"
+                                    android:text="https://whrhealth.com"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:drawableTop="@drawable/ic_mail"
+                                    android:text="info@whrhealth.com"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

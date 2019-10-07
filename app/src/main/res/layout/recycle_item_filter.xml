@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutClose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:orientation="horizontal">
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+        android:id="@+id/txtFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#21409a"
+        android:drawableEnd="@drawable/ic_close_white"
+        android:drawableRight="@drawable/ic_close_white"
+        android:padding="@dimen/_4sdp"
+        android:text="Nearby"
+        android:textColor="#d8d8d8" />
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/PaymentType"
+            android:textColor="@color/primary_dark"
+            android:textSize="@dimen/_16sdp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_close_white"
+            app:civ_border_color="@color/red"
+            app:civ_border_width="@dimen/_1sdp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/SelectYourPaymentType"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+    <RadioGroup
+        android:id="@+id/rediaGroupButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cashdeliverycheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:checked="false"
+            android:fontFamily="OpenSans-Bold.ttf"
+            android:text="@string/Cash"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/cashBenifitbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/round_corner_primary_button"
+                    android:fontFamily="OpenSans-Regular.ttf"
+                    android:text="Benifit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_14sdp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/onlinechck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:checked="true"
+            android:fontFamily="OpenSans-Bold.ttf"
+            android:text="@string/Online"
+            android:textSize="@dimen/_14sdp" />
+
+        <CheckBox
+            android:id="@+id/checkPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:text="Hard Copy Report(addl.Courier Charges Rs.50/-)"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/benoifittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/payonlineandgetmorebenefit"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:visibility="gone"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/onlinebenifitBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/round_corner_primary_button"
+                    android:fontFamily="OpenSans-Regular.ttf"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Benifit"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_14sdp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:id="@+id/paymentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:visibility="gone">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/paybleAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/primary"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:text="Payable Amount"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/paybleAmount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:background="@color/primary"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:text="@string/Amount"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16sdp" />
+
+        <Button
+            android:id="@+id/yesBtnOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/amount"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:text="@string/Pay"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/paymentLayoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/black"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <Button
+                android:id="@+id/yesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/primary"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:text="@string/Pay"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14sdp" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+</LinearLayout>

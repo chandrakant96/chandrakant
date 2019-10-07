@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RescheduleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtConfirmReschedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary"
+            android:padding="@dimen/_10sdp"
+            android:text="RESCHEDULE"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/txtConfirmReschedule"
+            android:background="@color/notification_background"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/primary">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/materialLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    app:mrl_rippleColor="@color/black"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_action_back" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/materialLayout"
+                    android:layout_toRightOf="@+id/materialLayout"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relativeDetails"
+                android:layout_below="@+id/toolBar"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Reason for reschedule*"
+                        android:textColor="#343434"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@drawable/background_card"
+                        android:fontFamily="OpenSans-Regular.ttf"
+                        android:padding="@dimen/_3sdp">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_down" />
+
+                        <Spinner
+                            android:id="@+id/famillyMemberSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_toStartOf="@id/image"
+                            android:layout_toLeftOf="@id/image"
+                            android:background="@null"
+                            android:overlapAnchor="false"
+                            android:spinnerMode="dropdown"
+                            tools:listitem="@layout/family_spinner_row" />
+
+
+                    </RelativeLayout>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="Select date and time for reschedule*"
+                        android:textColor="#343434"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <com.whr.user.com.WHR.ViewPackage.CalendarViewScrollable
+                        android:id="@+id/calendarView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="#f2f2f2"
+                        android:scrollbars="horizontal" />
+
+                    <LinearLayout
+                        android:id="@+id/lineTypeTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtMorning"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/morning"
+                            android:textColor="@color/black" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtAfternoon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/afternoon"
+                            android:textColor="@color/black" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtEvening"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Evening"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewTimeSlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@color/white"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Message*"
+                            android:textColor="#343434"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/etxMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@color/white"
+                            android:fontFamily="OpenSans-Regular.ttf"
+                            android:hint="Enter Your message here"
+                            android:padding="@dimen/_50sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

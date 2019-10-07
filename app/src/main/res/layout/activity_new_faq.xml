@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgWhrLogo"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white"
+                android:src="@drawable/ic_action_whr_log" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/primary"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/imageClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_4sdp"
+                    app:srcCompat="@drawable/ic_close_white" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            android:indeterminateDuration="2000"
+            android:max="1000"
+            android:min="0"
+            android:progress="100"
+            android:progressDrawable="@drawable/progress_icon"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hospitalListRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</RelativeLayout>

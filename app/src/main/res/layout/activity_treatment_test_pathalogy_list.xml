@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_coordinatlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:src="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@+id/imgBack"
+                android:gravity="center_vertical"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activitySuggestTreatmentRecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

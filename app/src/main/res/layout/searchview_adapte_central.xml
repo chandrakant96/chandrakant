@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/primary"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_ripplePersistent="false">
+
+        <RelativeLayout
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_4sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/imgNext"
+                android:layout_toLeftOf="@+id/imgNext"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtCentralSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="italic" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_navigate_nex" />
+
+
+        </RelativeLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/primary" />
+
+</LinearLayout>
+
+
+

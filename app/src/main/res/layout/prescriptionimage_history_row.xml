@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/primary"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_ripplePersistent="false">
+
+        <LinearLayout
+            android:id="@+id/iteamClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doctor_specification_imageView"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:src="@drawable/user_blue"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="@dimen/_2sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/doctor_specilization_main_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:text=" " />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/doctor_sub_specilization_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="8.5"
+                    android:text="@string/Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+</LinearLayout>

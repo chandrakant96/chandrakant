@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linePackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:id="@+id/txtSubPackageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:text="General"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:id="@+id/txtDiscountPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4sdp"
+                android:text="140000"
+                android:textColor="@color/black" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:id="@+id/txtActualPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strike"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="140000" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

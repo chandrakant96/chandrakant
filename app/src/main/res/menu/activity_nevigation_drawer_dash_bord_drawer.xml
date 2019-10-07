@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/gdvfhf"
+        android:checkableBehavior="single">
+
+        <group
+            android:id="@+id/grp1"
+            android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/nav_myProfile"
+                android:icon="@drawable/ic_my_account"
+                android:title="@string/MyAccount" />
+        </group>
+
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_appointments"
+            android:icon="@drawable/ic_appointments"
+            android:title="@string/Appointments" />
+
+    </group>
+
+    <group
+        android:id="@+id/grp5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_reports"
+            android:title="@string/Reports" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/grp7"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/nav_treatment_Suggest"
+            android:icon="@drawable/ic_treatment_suggested"
+            android:title="@string/TreatmentSuggested" />
+    </group>
+    <group
+        android:id="@+id/grp18"
+        android:checkableBehavior="single"
+        android:visible="false">
+
+        <item
+            android:id="@+id/nav_refereedDoctor"
+            android:icon="@drawable/ic_reffered_doctor"
+            android:title="@string/ReferredDoctor" />
+    </group>
+
+    <group
+        android:id="@+id/grpPayBill"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_PayBill"
+            android:icon="@drawable/ic_pay_bill"
+            android:title="@string/PayBill" />
+
+    </group>
+    <group
+        android:id="@+id/grpWallate"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_wallet"
+            android:title="@string/Wallet" />
+
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_invite"
+            android:icon="@drawable/ic_invite"
+            android:title="@string/invite_friends_and_family" />
+
+    </group>
+    <group
+        android:id="@+id/grp4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_Family"
+            android:icon="@drawable/ic_family"
+            android:title="@string/Family" />
+
+    </group>
+    <group
+        android:id="@+id/grp6"
+        android:checkableBehavior="single"
+        android:visible="false">
+
+        <item
+            android:id="@+id/nav_AddEmergency"
+            android:icon="@drawable/ic_emergency_contacts"
+            android:title="@string/EmergencyContacts" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/grp8"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_life_style"
+            android:title="@string/Lifestyle"
+            android:visible="false" />
+
+    </group>
+
+    <group
+        android:id="@+id/grp9"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_setting"
+            android:title="@string/settings" />
+
+    </group>
+
+</menu>

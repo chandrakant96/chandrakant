@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:background="@drawable/background_card">
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+        android:id="@+id/txtSelectTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_close_white"
+        android:drawableRight="@drawable/ic_close_white"
+        android:drawablePadding="@dimen/_4sdp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:text="@string/TreatmentName" />
+
+</LinearLayout>

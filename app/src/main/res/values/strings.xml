@@ -1,0 +1,767 @@
+<resources>
+    <string name="app_name" translatable="false">WHR</string>
+
+    <string name="facebook_app_id" translatable="false">1670347293014852</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1670347293014852</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings" translatable="false">Settings</string>to
+    <string name="title_activity_cashless_hospital" translatable="false">CashlessHospital</string>
+    <string name="title_activity_new_login" translatable="false">Sign in</string>
+
+    <!-- Strings related to login -->
+
+    <string name="address_found" translatable="false">Address found</string>
+
+    <string name="no_address_found" translatable="false">Sorry, no address found</string>
+    <string name="no_location_data_provided" translatable="false">No location data provided</string>
+    <string name="service_not_available" translatable="false">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used" translatable="false">Invalid latitude or longitude used</string>
+
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+
+
+    <string name="title_activity_home" translatable="false">HomeActivity</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <string name="generic_server_down" translatable="false">Please Try Again After Some Time</string>
+    <string name="generic_error" translatable="false">Please Try Again After Some Time</string>
+    <string name="generic_server_timeout" translatable="false">Please Try Again After Some Time</string>
+    <string name="auth_failed" translatable="false">Please Try Again After Some Time</string>
+    <string name="no_internet">Connection Error</string>
+    <string name="no_network_connection" translatable="false">No Network Connection</string>
+    <string name="parsing_failed" translatable="false">Please Try Again After Some Time</string>
+
+
+    <string name="label_cancel" translatable="false">Cancel</string>
+    <string name="label_ok" translatable="false">OK</string>
+
+    <string name="notification_image_saved" translatable="false">Image saved</string>
+    <string name="notification_image_saved_click_to_preview" translatable="false">Image saved. Click to preview.</string>
+
+    <string name="menu_download">Download</string>
+
+    <string name="format_crop_result_d_d" translatable="false">Crop Result (%1$dx%2$d)</string>
+
+    <string name="permission_title_rationale" translatable="false">Permission needed</string>
+    <string name="permission_write_storage_rationale" translatable="false">Storage write permission is needed to save the image.</string>
+
+    <string name="toast_unexpected_error" translatable="false">Unexpected error</string>
+
+    <string name="file_provider_authorities" translatable="false">com.yalantis.ucrop.provider</string>
+
+
+    //Locallization for dashbord
+
+    <string name="das_emergancy" translatable="false">Emergency</string>
+    <string name="das_chektoservice" translatable="false">Click To get Emergency Service</string>
+    <string name="das_fristadd" translatable="false">First Aid</string>
+    <string name="das_poburning" translatable="false">Poisoning,Burning</string>
+
+    <string name="das_doctor" translatable="false">Doctor</string>
+    <string name="das_hospital" translatable="false">Hospital</string>
+    <string name="das_Diagnostic" translatable="false">Diagnostic</string>
+    <string name="das_Chemist" translatable="false">Chemist</string>
+    <string name="das_Blood_Bank" translatable="false">Blood Bank</string>
+    <string name="das_Instruments" translatable="false">OTC Products</string>
+
+    <string name="das_alternative" translatable="false">Alternative</string>
+    <string name="das_treatment" translatable="false">Treatment</string>
+    <string name="das_best" translatable="false">Best</string>
+    <string name="das_offers">Offers</string>
+    <string name="das_health" translatable="false">Health</string>
+    <string name="das_insurance" translatable="false">Insurance</string>
+
+    // side navigation
+
+    <string name="nav_myaccount" translatable="false">My Account</string>
+    <string name="nav_Appointment" translatable="false">Appointments</string>
+    <string name="nav_Reports" translatable="false">Reports</string>
+    <string name="nav_TreatmentSuggested" translatable="false">Treatment Suggested</string>
+    <string name="nav_ReferredDoctor" translatable="false">Referred  Doctor</string>
+    <string name="nav_PayBill" translatable="false">Pay Bill</string>
+    <string name="nav_Wallet" translatable="false">Wallet</string>
+    <string name="nav_Favourites" translatable="false">Favourites</string>
+    <string name="nav_Family" translatable="false">Family</string>
+    <string name="nav_EmergencyContacts" translatable="false">Emergency Contacts</string>
+    <string name="nav_share_earn" translatable="false">Share &amp; Earn</string>
+    <string name="nav_rate_app" translatable="false">Rate Mobile App</string>
+    <string name="nav_Lifestyle" translatable="false">Lifestyle</string>
+    <string name="nav_aboutus" translatable="false">About Us</string>
+    <string name="nav_help" translatable="false">Help</string>
+    <string name="nav_singout" translatable="false">Sign Out</string>
+    <string name="title_activity_show_doctor_list_from_treatment_charge_list_for_package" translatable="false">
+        ShowDoctorListFromTreatmentChargeListForPackage
+    </string>
+    <string name="title_activity_navigation_for_user" translatable="false">NavigationForUser</string>
+    <string-array name="category">
+        <item>Please Select category</item>
+        <item>Doctor</item>
+        <!--<item>Hospital</item>-->
+        <item>Pathology</item>
+    </string-array>
+
+
+    <!---->
+
+    <string name="hello_world" translatable="false">Hello world!</string>
+
+    <string name="title_activity_sms" translatable="false">SmsActivity</string>
+    <string name="action_logout" translatable="false">Logout</string>
+    <string name="msg_enter_mobile" translatable="false">Enter your mobile number to get started!</string>
+    <string name="lbl_name" translatable="false">Name</string>
+    <string name="lbl_email" translatable="false">Email</string>
+    <string name="lbl_mobile" translatable="false">Mobile</string>
+    <string name="lbl_next" translatable="false">NEXT</string>
+    <string name="msg_sit_back" translatable="false">Sit back &amp; Relax! while we verify your mobile number</string>
+    <string name="msg_manual_otp" translatable="false">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="lbl_enter_otp" translatable="false">Enter OTP</string>
+    <string name="lbl_submit" translatable="false">SUBMIT</string>
+    <string name="whr" translatable="false">WHR</string>
+
+    <integer name="slide_animation_duration">300</integer>
+
+    <!--Multi Language-->
+
+    <!--login page-->
+    <string name="welcome">Welcome To WHR</string>
+    <string name="changeLanguage">Select Language</string>
+    <string name="userId">User Id</string>
+    <string name="password">Password</string>
+    <string name="keepMeLogin">Keep Me Logged In</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="loginFacebook">LogIn With Facebook</string>
+    <string name="loginGoogle">Login With Google</string>
+    <string name="register">Register</string>
+
+    <!--login PopUp-->
+    <string name="ForgoPassword">Forgot Password</string>
+    <string name="EnterRegisteredMobileNumber">Enter Registered Mobile Number</string>
+    <string name="YouwillgetOTP">You will get OTP by SMS to reset password</string>
+    <string name="Submit">Submit</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="EnterNewPassword">Enter New Password</string>
+    <string name="EnterPasswordAgain">Enter Password Again</string>
+    <string name="PasswordChanged">Password Changed</string>
+    <string name="LoginwithnewPassword">Login with new Password</string>
+
+
+    <!--Register-->
+    <string name="SignUp">Sign Up</string>
+    <string name="indicatesmandatoryfields">indicates mandatory fields</string>
+    <string name="FullName">Full Name</string>
+    <string name="DateOBirth">Date Of Birth(dd/mm/yyyy)</string>
+    <string name="MobileNumber">Mobile Number : </string>
+    <string name="EnterEmailId">Enter Email Id</string>
+    <string name="SocialNumbe">Social Number</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Other">Other</string>
+    <string name="EnterPassword">Enter Password</string>
+    <string name="OfferCode">Offer Code (If Available)</string>
+    <string name="IAgreeTermsandConditions">I Agree Terms and Conditions</string>
+
+    <!--Register pupUp-->
+    <string name="MobileVerification">Mobile Verification</string>
+    <string name="EnterOTP">Enter OTP</string>
+    <string name="Confirm">Confirm</string>
+    <string name="EnterOTPsentbySMS">Enter OTP sent by SMS on \nyour Registered mobile number</string>
+    <string name="SuccessfullyRegistered">Successfully Registered</string>
+    <string name="UserName">User Name:</string>
+    <string name="OK">Ok</string>
+
+    <!--dashboard-->
+    <string name="location">Location</string>
+    <string name="notification">Notification</string>
+    <string name="filter">Filter</string>
+    <string name="searchby">Search by Name/Test/Treatment</string>
+    <string name="whrId">Whr Id:</string>
+    <string name="emergency">Emergency</string>
+    <string name="emergencyone">Click To get Emergency Service</string>
+    <string name="firstId">First Aid</string>
+    <string name="schemes">Apply Government Schemes / NGO</string>
+    <string name="firstIdone">Poisoning,Burning</string>
+    <string name="appoinment">Book An Appoinment</string>
+    <string name="doctor">Doctor</string>
+    <string name="hospital">Hospital</string>
+    <string name="diagnostic">Diagnostic</string>
+    <string name="chemist">Chemist</string>
+    <string name="alternative">Alternative Treatment</string>
+    <string name="bestOffers">Best Offers</string>
+    <string name="insurance">Health Insurance</string>
+    <string name="upcoming">Upcoming</string>
+
+    <!--side menu-->
+    <string name="English">English</string>
+    <string name="Marathi">Marathi</string>
+    <string name="ChangeLanuage">Change Language</string>
+    <string name="MyAccount">My Account</string>
+    <string name="Appointments">Appointments</string>
+    <string name="Reports">Reports</string>
+    <string name="TreatmentSuggested">Treatment Suggested</string>
+    <string name="ReferredDoctor">Referred  Doctor</string>
+    <string name="PayBill">Pay Bill</string>
+    <string name="Wallet">Wallet</string>
+    <string name="Favourites">Favourites</string>
+    <string name="Family">Family</string>
+    <string name="EmergencyContacts">Emergency Contacts</string>
+    <string name="Lifestyle">Lifestyle</string>
+    <string name="ShareAndEarn">Share &amp; Earn</string>
+    <string name="RateMobileApp">Rate Mobile App</string>
+    <string name="AboutUs">About Us</string>
+    <string name="Help">Help</string>
+    <string name="SignOut">Sign Out</string>
+
+    <!--Doctor Flow-->
+    <string name="searchbydoctorspeciality">Search By Doctor Speciality</string>
+    <string name="SearchByDoctor">Search By Doctor</string>
+    <string name="Experience">Experience</string>
+    <string name="Fee">Fee</string>
+    <string name="Distance">Distance</string>
+    <string name="Reviews">Reviews</string>
+    <string name="Chat">Chat</string>
+    <string name="Call">Call</string>
+    <string name="Book">Book</string>
+    <string name="PleaseSelectFamilyMember">Please Select Family Member</string>
+    <string name="TreatmentName">Treatment Name</string>
+    <string name="TreatmentList">Treatment List</string>
+    <string name="Amount">Amount</string>
+    <string name="Discounttreatment">Discount</string>
+    <string name="Description">Description</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="BookAppointment">Book Appointment</string>
+    <string name="PaymentType">Payment Type</string>
+    <string name="SelectYourPaymentType">Select Your Payment Type</string>
+    <string name="Cash">Pay At Hospital</string>
+    <string name="Online">Pay Online</string>
+    <string name="payonlineandgetmorebenefit">pay online and get more benefit</string>
+    <string name="Pay">Pay</string>
+
+    <!--Doctor Filter-->
+    <string name="Education">Education</string>
+    <string name="SelectEducation">Select Education</string>
+    <string name="Min">Min</string>
+    <string name="Max">Max</string>
+    <string name="Treatment">Treatment</string>
+    <string name="SelectTreatment">Select Treatment</string>
+    <string name="Fees">Fees</string>
+    <string name="Apply">Apply</string>
+    <string name="FilterByEducation">Filter By Education</string>
+    <string name="SearchByEducation">Search By Education</string>
+    <string name="FilterByTreatment">Filter By Treatment</string>
+    <string name="SearchByTreatment">Search By Treatment</string>
+    <string name="Cancel">Cancel</string>
+    <!--Hospital Flow-->
+    <string name="Hospital">Hospital</string>
+    <string name="SearchByHospital">Search By Hospital</string>
+    <string name="PackageList">Package List</string>
+    <string name="SearchHospitalSpeciality">Search Hospital Speciality</string>
+    <!--Packeges-->
+    <string name="SurgeryPackages">Surgery Packages</string>
+    <string name="SearchHospitalPackages">Search Hospital Packages</string>
+    <string name="SelectFamilyMember">Select Family Member</string>
+    <string name="Notations">Notations</string>
+    <string name="AvailableEmtySlot">=Availble/Empty Slot</string>
+    <string name="Booked">=Booked</string>
+    <string name="SelectedBYYou">=Selected BY You</string>
+    <string name="Included">Included</string>
+    <string name="Excluded">Excluded</string>
+    <string name="TotalPrice">Total Price:</string>
+    <string name="DiscountedPrice">Discounted Price :</string>
+    <string name="SRNO">SR NO</string>
+    <string name="PARTICULAR">PARTICULAR</string>
+    <!--Doctor-->
+    <string name="DoctorList">Doctor List</string>
+    <string name="HospitalAdmissionBooking">Hospital Admission Booking</string>
+    <!--Hospital Filter-->
+    <string name="DoctorName">Doctor Name</string>
+    <string name="SelectByDoctorName">Select By Doctor Name</string>
+    <string name="Packages">Packages</string>
+    <string name="SelectByPackagesName">Select By Packages Name</string>
+    <string name="FilterByDoctorName">Filter By Doctor Name</string>
+    <string name="SearchByDoctorName">Search By Doctor Name</string>
+    <string name="FilterByPackages">Filter By Packages</string>
+    <string name="SearchByPackageName">Search By Package Name</string>
+    <!--hospital Admission Booking-->
+    <string name="AdvanceBooking">Advance Booking</string>
+    <string name="HospitalName">Hospital Name</string>
+    <string name="AdvancePayment">Advance Payment</string>
+    <string name="TermsAndCondition">Terms And Condition</string>
+
+    <!--Diagnosic FLow-->
+    <string name="Diagnostic">Diagnostic</string>
+    <string name="SearchByDiagnostic">Search By Diagnostic</string>
+    <string name="SearchByPathology">Search By Pathology</string>
+    <string name="BookTest">Book Test</string>
+    <string name="more">more</string>
+    <string name="Test">Test</string>
+    <string name="SelectByTestName">Select By Test Name</string>
+    <string name="FilterByTest">Filter By Test</string>
+    <string name="SearchByTest">Search By Test</string>
+    <string name="ServicesAndCharges">Services And Charges</string>
+    <string name="PayAtDignosticCentre">Pay At Diagnostic Centre</string>
+
+    <!--first aid-->
+    <string name="FirstAid">First Aid</string>
+    <string name="Lifestylee">Lifestyle</string>
+    <string name="SearchforFirstAid">Search for First Aid</string>
+    <string name="Text">Text</string>
+    <string name="Audio">Audio</string>
+    <string name="Video">Video</string>
+
+    <!--Emergency-->
+    <string name="Emergency">Emergency</string>
+    <string name="CurrentLocation">Current Location:</string>
+    <string name="hundeadeight">108</string>
+    <string name="OnlyFreeServices">(Only Free Services)</string>
+    <string name="PaidServices">Paid Services</string>
+    <string name="Iwanttoinformabout">I want to inform about</string>
+    <string name="tonearest">to nearest</string>
+    <string name="availablemedicalservices">available medical services!</string>
+    <string name="SendEmergency">Send Emergency</string>
+    <string name="Yourcontactdetailswillbesendtonearestmedical">Your contact details will be send to nearest medical</string>
+    <string name="Emergencyservicesprovider">Emergency services provider</string>
+
+    <!--Alternative-->
+    <string name="Alternative">Alternative</string>
+
+
+    <!--Best Offers-->
+    <string name="Offer">Offer</string>
+    <string name="From">From : </string>
+    <string name="To">To : </string>
+
+    <!--My Profile-->
+    <string name="Name">Name : </string>
+    <string name="DOB">DOB : </string>
+    <string name="BloodGroup">Blood Group : </string>
+    <string name="MobNumber">Mobile Number : </string>
+    <string name="Email">Email : </string>
+    <string name="EditInfo">Edit Info</string>
+    <string name="Save">Save</string>
+    <string name="Uploadprofilephoto">Upload profile photo</string>
+
+    <!--Appoinments-->
+    <string name="DateTime">Date/Time</string>
+    <string name="DoctorLab">Doctor/Lab</string>
+    <string name="Reason">Reason</string>
+    <string name="CancelAppointment">Cancel Appointment</string>
+    <string name="Accept">Accept</string>
+    <string name="Doyouwanttocancelthisappointment">Do you want to cancel this appointment ?</string>
+    <string name="Reschedule">Reschedule</string>
+    <string name="UpcomingAppointments">Upcoming Appointments</string>
+    <string name="Followup">Followup</string>
+    <string name="AppointmentHistory">Appointment History</string>
+    <string name="PathologyAppointment">Pathology Appointment</string>
+
+    <!--Report-->
+    <string name="TypesOfReport">Types Of Report: </string>
+    <string name="Completed">Completed </string>
+    <string name="Pending">Pending </string>
+    <string name="Prescription">Prescription </string>
+    <string name="ShowReport">Show Report </string>
+    <string name="UploadReports">Upload Reports </string>
+    <string name="Yourgenratedreportsaredisplaybelow">Your genrated reports are display below</string>
+    <string name="Yourgenratedprescriptioaredisplaybelow">Your genrated prescription are display below</string>
+    <string name="SelectPhoto">Select Photo</string>
+    <string name="SelectPDF">Select PDF</string>
+    <string name="Checkupfor">Checkup for :</string>
+    <string name="TestSuggestedBy">Test Suggested By :</string>
+    <string name="EnterDoctorName">Enter Doctor Name</string>
+    <string name="PathologyName">Pathology Name : </string>
+    <string name="EnterpathologyName">Enter pathology Name</string>
+    <string name="CheckupDate">Checkup Date :</string>
+    <string name="Upload">Upload</string>
+    <string name="SelectTest">Select Test</string>
+    <string name="Datenewestfirst">Date (newest first)</string>
+    <string name="Dateoldestfirst">Date (oldest first)</string>
+    <string name="CustomDateSearch">Custom Date Search</string>
+    <string name="AdvanceSearch">Advance Search</string>
+    <string name="Search">Search</string>
+    <string name="SelectType">Select Type</string>
+
+    <!--Treatment Suggested-->
+    <string name="Suggested">Suggested</string>
+    <string name="SuggestDate">Suggest Date: </string>
+    <string name="Address">Address</string>
+
+    <!--Referred Doctor-->
+    <string name="FromDoctor">From Doctor</string>
+    <string name="ToDoctor">To Doctor</string>
+
+    <!--Pay Bill-->
+    <string name="PaymentHistory">Payment History</string>
+
+    <!--Wallet-->
+    <string name="All">All</string>
+    <string name="Credited">Credited</string>
+    <string name="Debited">Debited</string>
+    <string name="WalletAmount">Wallet Amount : </string>
+    <string name="EarnPoint">Earn Point : </string>
+    <string name="DebitedPoint">Debited Point : </string>
+    <string name="BookingId">Booking Id : </string>
+
+    <!--Family-->
+    <string name="FamilyMembers">Family Member</string>
+    <string name="Youcanaddonlyfamilymember">You can add only 5 family members</string>
+    <string name="FamilyMemberSuccessfullyUpdated">Family Member Successfully Updated</string>
+    <string name="Userisalreadyregistered">User is already registered</string>
+    <string name="SearchMemberNamewhrid">Search Member Name/whr id</string>
+    <string name="AddMember">Add Member </string>
+    <string name="Relation">Relation : </string>
+    <string name="BloodGroupp">Blood Group : </string>
+    <string name="Emaill">Email : </string>
+    <string name="DoBb">DoB : </string>
+    <string name="Mobb">Mob : </string>
+    <string name="EmergencyNumber">Emergency Number</string>
+    <string name="InsurancePolicyNo">Insurance Policy No</string>
+    <string name="AddFamilyMember">Add Family Member</string>
+    <string name="SelectRelationship">Select Relationship</string>
+
+    <!--Emergency-->
+    <string name="AddNew">Add New </string>
+    <string name="Contacts">Contacts</string>
+    <string name="AddContactImage">Add Contact Image</string>
+    <string name="EnterName">Enter Name</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="Delete">Delete</string>
+    <string name="DoyoureallywanttodeletethisEmergencyMemberContact">Do you really want to delete this Emergency Member Contact?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+
+    <!--LifeStyle-->
+    <string name="SearchforHealthyLifestyle">Search for Healthy Lifestyle</string>
+
+    <!--Share-->
+    <string name="ShareApp">Share App</string>
+    <string name="ConnectEarnfromcontacts">Connect &amp;  Earn from contacts</string>
+    <string name="Social">Social</string>
+    <string name="Contact">Contacts</string>
+
+    <!--Rate-->
+    <string name="RateWHRApp">Rate WHR App</string>
+    <string name="Youarenowconnect">You are now connect to Indias best health App for People. \nIs this worth 5 stars?</string>
+    <string name="NotNow">Not Now</string>
+
+    <!--Help-->
+    <string name="FrequentlyaskedQuestions">Frequently asked \nQuestions</string>
+    <string name="LiveChat">Live Chat</string>
+    <string name="ServicesRequest">Services Request</string>
+    <string name="CallNow">Call Now</string>
+
+    <!--LocationActivity-->
+    <string name="searchcitylocality">Search City / Locality</string>
+    <string name="SelectCurrentLocation">Select Current Location</string>
+
+    <!--Feedback-->
+    <string name="Feedback">Feedback</string>
+    <string name="HowToReach">How To Reach</string>
+    <string name="ConsultationFees">Consultation Fees</string>
+    <string name="ViewAll">View All</string>
+    <string name="SeeAssociates">See Associates</string>
+    <string name="Forwhatproblemreatmentdidyouwantvisit">For what problem /treatment did you want visit</string>
+    <string name="egHeartDiabetes">eg.Heart,Diabetes</string>
+    <string name="Wouldyourecommend">Would you recommended the doctor to your Family &amp; friend?</string>
+    <string name="Howwasyourexperiencewithdoctor">How was your experience with doctor?</string>
+    <string name="Great">Great</string>
+    <string name="Good">Good</string>
+    <string name="Average">Average</string>
+    <string name="NotBad">Not Bad</string>
+    <string name="Sad">Sad</string>
+    <string name="Taptostarttyping">Tap to start typing...</string>
+    <string name="WouldyourecommendtheHospitaltoyourFamilyfriend">Would you recommend the Hospital to your Family and friend?</string>
+    <string name="HowwasyourexperiencewithHospital">How was your experience with Hospital?</string>
+    <string name="InsurancePartners">Insurance Partners</string>
+    <string name="SeeallPartner">See all Partner</string>
+    <string name="CallEnquire">Call &amp; Enquire</string>
+    <string name="SeeallDoctor">See all Doctor</string>
+
+
+    <!--SnackBar-->
+    <!--Login Activity-->
+    <string name="PleaseEnterValidUserId">Please Enter Valid UserId</string>
+    <string name="PleaseEnterValidMobileNumber">Please Enter Valid Mobile Number</string>
+    <string name="PleaseEnterUseridandPassword">Please Enter User id and Password</string>
+    <string name="UserIdOrRegisteredMobileisWronginformation">User Id Or Registered Mobile is Wrong  information</string>
+    <string name="UserAlreadyRegistered">User Already Registered</string>
+    <!--Registration-->
+    <string name="PleaseAgreeTermsandConditionstocontinue">Please Agree Terms and Conditions to continue</string>
+    <string name="PleaseSelectValidDob">Please Select Valid Dob</string>
+    <string name="PleaseEnterValidcontactnumber">Please Enter Valid contact number</string>
+    <string name="PleaseEnterPasswordWithMinimumCharacter">Please Enter Password With Minimum 4 Character</string>
+    <string name="ShareSuccessfully">Share Successfully</string>
+    <!--Doctor Flow-->
+    <string name="DoctorLocationNotAvalible">Doctor Location Not Avalible</string>
+    <string name="AppointmentSuccessfullyBooked">Appointment Successfully Booked</string>
+    <string name="DoctorLiked">Doctor Liked</string>
+    <string name="DoctorUnliked">Doctor Unliked</string>
+    <string name="DoctorSuccessfullyAddedToFavourite">Doctor Successfully Added To Favourite</string>
+    <string name="DoctorSuccessfullyRemovedfromFavourite">Doctor Successfully Removed from Favourite</string>
+    <string name="EnableToBookAppointmentPleaseryAgain">Enable To Book Appointment Please try Again</string>
+    <string name="PaymentFailed">Payment Failed</string>
+    <string name="PleaseSelectAtleastOneField">Please Select at least One Field</string>
+    <string name="FeedbackSent">Feedback Sent</string>
+    <string name="NoFeedbackAvailable">No Feedback Available</string>
+    <string name="TimeSlotNotAvailable">Time Slots Not Available</string>
+    <string name="PleaseSelectAppointmentTime">Please Select Appointment Time</string>
+    <string name="PleaseSelectPaymentType">Please Select Payment Type</string>
+    <!--Pathology Flow-->
+    <string name="NoPathologyAvailable">No Pathology Available</string>
+    <string name="PathologyLiked">Pathology Liked</string>
+    <string name="PathologyUnliked">Pathology Unliked</string>
+    <string name="PathologyAddedToFavouriteSuccessfully">Pathology Added To Favourite Successfully </string>
+    <string name="EnableToAddInFavouritePleaseTryAgain">Enable To Add In Favourite Please Try Again</string>
+    <string name="PleaseselectatleastoneTest">Please select  atleast one Test</string>
+    <string name="PathologyIsOnHoliday">Pathology Is On Holiday</string>
+    <string name="SelectTime">Select Time</string>
+    <string name="NoAppointmentAvailable">No Appointment Available</string>
+    <string name="PleaseEnterCity">Please Enter City</string>
+    <string name="PleaseEnterAddress">Please Enter Address</string>
+    <string name="PleaseEnterState">Please Enter State</string>
+    <string name="Discount15">Discount 15%</string>
+    <string name="PleaseSelectPinCode">Please Select Pin Code</string>
+    <!--Hospital Flow-->
+    <string name="PleaseSearchWithOtherName">Please Search With Other Name</string>
+    <string name="NoHospitalAvailable">No Hospital Available</string>
+    <string name="AdvanceBookingNotAvailble">AdvanceBookingNotAvailble</string>
+    <string name="Pleaseselectatleastonepackage">Please select at least one package</string>
+    <string name="DoctorIsOnHoliday">Doctor Is On Holiday</string>
+    <!--Alternative-->
+    <string name="NoDoctorAvailableForThisPathy">No Doctor Available For This Pathy</string>
+    <string name="NoInternetConnection">No Internet Connection</string>
+    <string name="Pleaseselectatleastonetreatment">Please select  at least one treatment</string>
+    <!--Best Offer-->
+    <string name="NoDataAvailable">No Data Available</string>
+    <string name="NoDoctorAvailable">No Doctor Available</string>
+    <string name="NoFamilyMemberAvailable">No Family Member Available</string>
+    <!--My Profile-->
+    <string name="SuccessfullyUpdated">Successfully Updated</string>
+    <string name="PleaseenterName">Please enter Name</string>
+    <string name="Pleaseentervaliddigitcontactnumber">Pleaseenter valid 10 digit contact number</string>
+    <string name="PleaseEnterValidEmailAddress">Please Enter Valid Email Address</string>
+    <string name="Pleaseenterpassword">Please enter password</string>
+    <string name="ProfileImageSuccessfullyUpdated">Profile Image Successfully Updated</string>
+    <string name="PleaseTryAgain">Please Try Again</string>
+    <!--Apoinments-->
+    <string name="YouDontHaveAnyFollowup">You Don\'t Have Any Followup</string>
+    <string name="TodaysYouDontHaveAnyAppointment">You Don\'t Have Any Appointment</string>
+    <string name="YouDontHaveAnyAppointmentHistory">You Don\'t Have Any Pathology Appointment</string>
+    <string name="AppointmentCancelledSuccessfully">Appointment Cancelled Successfully</string>
+    <string name="AppointmentCancellationFailed">Appointment Cancellation Failed</string>
+    <string name="YouDontHaveAnyPathologyAppointment">You Don\'t Have Any Pathology Appointment</string>
+    <!--Report-->
+    <string name="PleaseSelectTest">Please Select Test</string>
+    <string name="PleaseEnterDoctorName">Please Enter Doctor Name</string>
+    <string name="PleaseSelectDate">Please Select Date</string>
+    <string name="PleaseEnterPathology">Please Enter Pathology</string>
+    <string name="PleaseSelectImageOrPDF">Please Select Image Or PDF</string>
+    <string name="PleaseSelectFromDate">Please Select From Date</string>
+    <string name="PleaseSelectToDate">Please Select To Date</string>
+    <string name="PleaseSelectFromDateToDate">Please Select From Date ,To Date</string>
+    <string name="PleaseSelectTypeName">Please Select Type Name</string>
+    <!--Suggested Test Treatment-->
+    <string name="Lab">Lab</string>
+    <!--Family-->
+    <string name="FamilyMemberDeleted">Family Member Deleted</string>
+    <string name="UnableToDeleateFamilyMemberPleasetryAgain">Unable To Delete Family Member Please try Again</string>
+    <string name="Cannotselectfuturedate">Cannot select future date</string>
+    <string name="PleaseEnterValidEmailId">Please Enter Valid Email Id</string>
+    <string name="PleaseEnterValidName">Please Enter Valid Name</string>
+    <string name="PleaseSetValidDob">Please Set Valid Dob</string>
+    <string name="PleaseEnterValidEmergencyContactNumber">Please Enter Valid Emergency Contact Number</string>
+    <string name="PleaseEnterValidContactNumber">Please Enter Valid Contact Number</string>
+    <string name="PleaseSelectRelationship">Please Select Relationship</string>
+    <string name="PleaseSelectTermAndCondition">Please Select Term And Condition</string>
+    <string name="PasswordcannotbeEmpty">Password can not be Empty</string>
+    <string name="PasswordNotMatch">Password Not Match</string>
+    <!--Emergency-->
+    <string name="YouCanAddOnlyEmergencyContact">You Can Add Only 3 Emergency Contact</string>
+    <string name="PleaseEnterNameAndEmergencyNumber">Please Enter Name And Emergency Number</string>
+    <string name="EmergencyNumberSuccessfullyAdded">Emergency Number Successfully Added</string>
+    <string name="EmergencyNumberCanNotAddedPleaseTryAgain">Emergency Number Can Not Added Please Try Again</string>
+    <string name="CanNotAddMoreThanEmergencyNumbers">Can Not Add More Than 3 Emergency Numbers </string>
+    <string name="SpecialSymbolAreNotAllowed">Special Symbol Are Not Allowed</string>
+    <string name="EmergencyNumberDeleted">Emergency  Number Deleted</string>
+    <string name="UnableToDeleteEmergencyPleasetryAgain">Unable To Delete Emergency  Please try Again</string>
+    <!--LifeStyle-->
+    <string name="NoAudioDataAvailable">No Audio Data Available</string>
+    <string name="NoVideoDataAvailable">No Video Data Available"</string>
+    <string name="settings">Settings</string>
+    <string name="note">Note</string>
+    <string name="you_need_to_pay_20_online_amount_of_total_fee_in_advance_for_booking">You need to pay 20% online Amount of total fee in advance for booking</string>
+    <string name="the_remaining_amount_you_have_to_pay_at_hospital_diagnostic_is">The Remaining Amount you have to pay at hospital / Diagnostic is</string>
+    <string name="member_name">Member Name</string>
+    <string name="about_us">About Us</string>
+    <string name="invite_friends_and_family">Invite Friends and Family</string>
+    <string name="faq">Frequently Asked Questions</string>
+    <string name="live_chat">Live Chat</string>
+    <string name="call_now">Call Now</string>
+    <string name="services_request">Services Request</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="doctor_consultation_fee">Doctor Consultation Fee</string>
+    <string name="doctor_is_not_available_you_can_contact_with_other_doctor_for_consultation">Doctor is not available ... You Can Contact With Other Doctor for Consultation</string>
+    <string name="emergency_108">Emergency 108</string>
+    <string name="view">View</string>
+    <string name="medicine_name">Medicine Name</string>
+    <string name="qty">QTY</string>
+    <string name="price">Price</string>
+    <string name="pay_for_call">Pay For Call</string>
+    <string name="doctor_is_available_for_consultation_please_process_for_payment">Doctor is available for consultation please process for payment</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="are_you_sure_you_want_to_remove_this_item">Are you sure you want to remove this item?</string>
+    <string name="hi_friends_i_discover_new_health_care_app_whr_user_app_please_download_it">Hi friends, I discover new health care app WHR User App. Please Download it</string>
+    <string name="doctor_share">Doctor Share</string>
+    <string name="suggested_treatment">Suggested Treatment</string>
+    <string name="search_by_city">Search By City</string>
+    <string name="age">Age</string>
+    <string name="landmark">Landmark</string>
+    <string name="place_order">Place Order</string>
+    <string name="Holiday">Holiday</string>
+    <string name="RescheduleAppointment" translatable="false">Reschedule Appointment</string>
+    <string name="Hi">Hi</string>
+    <string name="Yourrequesting">  you are requesting for reschedule an appointment of</string>
+    <string name="ReportView">Report View</string>
+    <string name="PatientName">Patient Name</string>
+    <string name="agegender">Age/Gender:</string>
+    <string name="years">years</string>
+    <string name="suggestedtest">Suggest Test</string>
+    <string name="PaymentSuccess" translatable="false">Payment Success</string>
+    <string name="NoBillDetailAvailable">No Bill Detail Available</string>
+    <string name="selectLocation">Your Location Not Found\n For Selecting Your Location Click Here </string>
+    <string name="visit">Visit</string>
+    <string name="Booking">Booking</string>
+    <string name="Transaction">Transaction</string>
+    <string name="your_are_now_connect_to_india_s_best_health_app_for_pepole_n_is_this_worth_for_5_start">Your are now connected to India\'s best health App for pepole.  Is this worth for 5 start ?</string>
+    <string name="rate_5_star">Rate 5 Star</string>
+    <string name="app_settings">App Settings</string>
+    <string name="what_is_it">What is it?</string>
+    <string name="occours_due_to">Occurs due to</string>
+    <string name="recognition">Recognition</string>
+    <string name="cautions">Cautions :</string>
+    <string name="uploaded_on">Uploaded On</string>
+    <string name="Specialty">Specialty</string>
+    <string name="Loading">Loading....</string>
+    <string name="PleaseWaitCheckingDoctorAvailability">Please Wait Checking Doctor Availability...</string>
+    <string name="DoctorStatus">Doctors Status</string>
+    <string name="FeeIsNotAvailable">Fee Is Not Available</string>
+    <string name="may">May</string>
+    <string name="HosptilalFav">Hospital Successfully Added To Favourite</string>
+    <string name="HosptilalFavRemove">Hospital Removed From Favourite</string>
+    <string name="HosptilalLiked">Hospital Liked</string>
+    <string name="HosptilalUnliked">Hospital Unliked</string>
+    <string name="see_all_partner">See all Partner</string>
+    <string name="NoBenefitAvaialble">No Benefit Available</string>
+    <string name="Benefit">Benefit</string>
+    <string name="allopathy">Allopathy</string>
+    <string name="ayurvedic">Ayurvedic</string>
+    <string name="homeopathy">Homeopathy</string>
+    <string name="naturopathy">Naturopathy</string>
+    <string name="new_therapy">New Therapy</string>
+    <string name="AddPhoto">Add Photo</string>
+    <string name="TakePhoto">Take Photo</string>
+    <string name="ChooseFromLibrary">Choose From Library</string>
+    <string name="SelectBloodGroup">Select Blood Group</string>
+    <string name="thankforappointmentbooking">Thank You For Booking Appointment!</string>
+    <string name="BookingAt">Booking At</string>
+    <string name="PaidAmount">Paid Amount</string>
+    <string name="booking_confirmation">Booking Confirmation</string>
+    <string name="wallet_discount_amount">Wallet Discount Amount</string>
+    <string name="online_paid">Online Paid</string>
+    <string name="pay_at_hospital">Pay At Hospital</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="cancellation_policies">Cancellation Policies</string>
+    <string name="downlaodsuccessful">Download Successful Please Check file In Download...</string>
+    <string name="PleaseSelectDoctor">Please Select Doctor From List</string>
+    <string name="PrescriptionView">Prescription View</string>
+    <string name="blood_pulse">Blood Pulse</string>
+    <string name="weight">Weight</string>
+    <string name="rr">PR</string>
+    <string name="bsl_rbs">BSL/RBS</string>
+    <string name="PrescriptionList">Prescription List</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="night">Night</string>
+    <string name="Doyouwantoremovefamily">Do you really want to delete family member?</string>
+    <string name="ReasonToVisit">Reason To visit the doctor</string>
+    <string name="comment">Comment</string>
+    <string name="RecommentTheDoctor"><![CDATA[Recommend the Doctor to My Family &; friend?]]></string>
+    <string name="ReasonToVisistHospital">Reason To visit the Hospital</string>
+    <string name="MyExperienceHospital"><![CDATA[Recommend the Hospital to My Family &; friend?]]></string>
+    <string name="MyExperiencewihHospital">My experience with  Hospital</string>
+    <string name="SearchBySpeciality">Search By Speciality</string>
+    <string name="SuccessfullyShared">Successfully Shared</string>
+    <string name="SuccessfullyUploaded">Successfully Uploaded</string>
+    <string name="offer50per">Get 50% Off  \n Any Doctor Consultation \n  Book Now</string>
+    <string name="_3_n_more">see more</string>
+
+    <string name="Letget">Let\'s get to know you</string>
+    <string name="provideyourdetailsasperPAN">(Provide your details as per PAN)</string>
+    <string name="fullName">Full Name</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="mailId">Mail Id</string>
+    <string name="panNumber">Pan Number</string>
+    <string name="city">City</string>
+    <string name="netIncome">Monthly Net Income</string>
+    <string name="PleaseEnterPanNumber">Please Enter Pan Number</string>
+    <string name="EnterCity">Please Enter City</string>
+    <string name="PleaseEnterYourNetIncome">Please Enter Net Income</string>
+    <string name="share">Share</string>
+    <string name="medical_loan">Medical Loan</string>
+    <string name="Request">Request</string>
+    <string name="to" translatable="false">to</string>
+    <string name="verify" translatable="false">Verify with your Mobile Number\nand get 50 WHR points, which can be \nredeemed at the time of booking</string>
+    <string name="advised_to_visit_to_doctor_doctor_recommended_very_good" translatable="false">- Advised to visit to Doctor
+        \n- Doctor Recommended,
+        \n- Very Good</string>
+
+    <string name="valueone" translatable="false">Would You like\n to recommend this Doctor</string>
+    <string name="valuetwo" translatable="false">What is value\n for money?</string>
+    <string name="valuethree" translatable="false">Explanation regarding your Health Issues</string>
+    <string name="valuefour" translatable="false">Let others know about\n your experience</string>
+
+
+    <string name="PayAtHospital" translatable="false">WHR would be taking atleast 20% of \n the treatment amount online right now \n for confirming the appointment.</string>
+    <string name="title_activity_nevigation" translatable="false">NevigationActivity</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="book" translatable="false">Book Doctor, Hospitals,\nDiagnostic Appoinments Online</string>
+    <string name="first" translatable="false">Get First Aid Tips\nOnline in Emergrncy</string>
+    <string name="get" translatable="false">Get Your Medical\nReports Online</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+</resources>

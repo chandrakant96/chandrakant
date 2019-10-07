@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoytBottom"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/layoytBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="@dimen/_15sdp"
+            android:text="Next"
+            android:textColor="@color/divider" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@null"
+            android:padding="@dimen/_15sdp"
+            android:text="Skip"
+            android:textColor="@color/divider" />
+
+    </RelativeLayout>
+</RelativeLayout>

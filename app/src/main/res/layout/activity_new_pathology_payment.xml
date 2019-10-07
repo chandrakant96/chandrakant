@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/notification_background">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:src="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@+id/imgBack"
+                android:gravity="center_vertical"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewFirst"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/layoutTop"
+            android:background="@color/accent" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/materialPayBottom"
+            android:layout_below="@id/viewFirst"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/txtAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <RelativeLayout
+                    android:id="@+id/layoutOnline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioPayOnline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true"
+                        android:fontFamily="OpenSans-Bold.ttf"
+                        android:text="Pay Online"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:id="@+id/txtOnlinePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutWalletPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:id="@+id/chkRedeem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="OpenSans-Regular.ttf"
+                        android:text="Redeem Rs.5% from your WHR wallet"
+                        android:textColor="#343434"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:text="*You can only redeem 5% of the total amount from the WHR Wallet"
+                        android:textSize="@dimen/_9sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="#b9b9b9" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutHospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPayAtHospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="OpenSans-Regular.ttf"
+                        android:text="Pay at the Diagnostics"
+                        android:textColor="#343434"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutPaymentValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_5sdp">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:id="@+id/txtHospital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:id="@+id/txtHospitalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="OpenSans-Regular.ttf"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPayAtDiagnostics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutPaymentValue"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_10sdp">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You need to pay 20% online Amount of total fee in andvance for booking"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtPayAtOnlinetwentyPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Rs.36"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="The remaining Amount you have to pay at Pathology"
+                            android:textSize="@dimen/_9sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtPayAtPathology"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Rs.144"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/_9sdp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="#b9b9b9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:layout_toStartOf="@+id/txtApplyPromo"
+                            android:layout_toLeftOf="@+id/txtApplyPromo"
+                            app:cardCornerRadius="@dimen/_4sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <EditText
+                                    android:id="@+id/edPromoCode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@+id/imgClosePromo"
+                                    android:layout_toLeftOf="@+id/imgClosePromo"
+                                    android:background="@color/white"
+                                    android:fontFamily="OpenSans-Regular.ttf"
+                                    android:gravity="center_vertical"
+                                    android:hint="Enter Promo Code"
+                                    android:imeOptions="actionDone"
+                                    android:maxLines="1"
+                                    android:padding="@dimen/_7sdp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgClosePromo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:padding="@dimen/_4sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_close_white" />
+
+                            </RelativeLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:id="@+id/txtApplyPromo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/primary"
+                            android:gravity="center"
+                            android:padding="@dimen/_7sdp"
+                            android:text="Apply"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </RelativeLayout>
+
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:id="@+id/txtPromoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:padding="@dimen/_6sdp"
+                        android:text="promo code is not valid."
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/materialPayBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/primary"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/black"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pay"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text="Rs."
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

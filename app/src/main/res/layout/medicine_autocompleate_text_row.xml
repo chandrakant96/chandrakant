@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:id="@+id/medicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:text="xx"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:id="@+id/medicineId"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textSize="1sp" />
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:id="@+id/medicinPrice"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:textColor="@color/black"
+        android:textSize="1sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+</LinearLayout>

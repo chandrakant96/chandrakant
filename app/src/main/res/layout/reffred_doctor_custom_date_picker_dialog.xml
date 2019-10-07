@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/alterboxtitleBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/CustomDateSearch"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/ic_close_white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/primary_dark" />
+
+        <LinearLayout
+            android:id="@+id/doctorNameEdittextDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/ReffredFromeditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_card"
+                android:drawableStart="@drawable/search"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:hint="Search By Doctor"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/from_customdialog_datetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/background_card"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawableRight="@drawable/ic_calendar"
+            android:padding="@dimen/_10sdp"
+            android:text="From Date"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/tocustomdialog_datetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/background_card"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:drawableRight="@drawable/ic_calendar"
+            android:padding="@dimen/_10sdp"
+            android:text="To Date"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/black"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+            <Button
+                android:id="@+id/searchbutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/primary"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:text="@string/Search"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_14sdp" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

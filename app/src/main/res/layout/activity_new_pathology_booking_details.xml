@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutbookingDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_background"
+    android:focusableInTouchMode="true"
+    tools:context=".booking.doctor.booking.BookingDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@+id/imgBack"
+                android:gravity="center_vertical"
+                android:text="Booking Details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/accent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/txtDone"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Treatment for"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/spinnerFamilyMember"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown"
+                                tools:listitem="@layout/family_spinner_row" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_down" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <View
+                        android:id="@+id/firstView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@color/divider"
+                        android:visibility="visible" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Your Name*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <EditText
+                            android:id="@+id/etxYourName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="OpenSansSemiBold.ttf"
+                            android:hint="Your Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords"
+                            android:maxLines="1"
+                            android:padding="@dimen/_8sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Mobile No.*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <EditText
+                            android:id="@+id/etxYourMobileNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="OpenSansSemiBold.ttf"
+                            android:hint="Mobile Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:padding="@dimen/_8sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|right"
+                        android:baselineAligned="false"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Verified Mobile No."
+                        android:textColor="@color/primary" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutForKrsnna"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Gender*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <Spinner
+                                android:id="@+id/spinnerGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown"
+                                tools:listitem="@layout/family_spinner_row" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_down" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Collection Type*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardCollection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <Spinner
+                                android:id="@+id/spinnerCollction"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown"
+                                tools:listitem="@layout/family_spinner_row" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_down" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Collection Centre Address.*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/spinnerAddressPathology"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown"
+                                tools:listitem="@layout/family_spinner_row" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_down" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoytDateOfBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Your Date of Birth.*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+
+                            <EditText
+                                android:id="@+id/etxYourDateOfBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:drawableEnd="@drawable/ic_calendar"
+                                android:drawableRight="@drawable/ic_calendar"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Enter Your Date Of Birth"
+                                android:imeOptions="actionDone"
+                                android:inputType="date"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/secondView"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@color/divider"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Patient’s Name*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <EditText
+                                android:id="@+id/etxpatientName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Patient’s Name"
+                                android:imeOptions="actionNext"
+                                android:inputType="textCapWords"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Patient’s Mobile No.*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <EditText
+                                android:id="@+id/etxpatientMobileNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Patient’s Mobile No"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Patient’s Date of Birth.*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+
+                            <EditText
+                                android:id="@+id/etxPatientDateOfBirth"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:drawableEnd="@drawable/ic_calendar"
+                                android:drawableRight="@drawable/ic_calendar"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Enter Your Date Of Birth"
+                                android:imeOptions="actionDone"
+                                android:inputType="date"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layoutPatientOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Patient’s Gender*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+                            <RadioGroup
+                                android:layout_margin="@dimen/activity_horizontal_margin"
+                                android:id="@+id/radioGroup"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/radioMale"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Male"
+                                    android:checked="true"
+                                    android:textSize="18sp"/>
+
+                                <RadioButton
+                                    android:id="@+id/radioFemale"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Female"
+                                    android:textSize="18sp"/>
+
+
+                            </RadioGroup>
+
+                        </android.support.v7.widget.CardView>
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Age.*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <EditText
+                                android:id="@+id/etxpatientAge"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Your Age"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Pincode.*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+                            <EditText
+                                android:id="@+id/etxpatientPincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Your Pincode"
+                                android:imeOptions="actionNext"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Current Address*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+
+                            <EditText
+                                android:id="@+id/etxPatientAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Enter Your Current Address"
+                                android:imeOptions="actionDone"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Email Id*"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/_5sdp"
+                            app:cardElevation="@dimen/_3sdp"
+                            app:cardPreventCornerOverlap="false"
+                            app:cardUseCompatPadding="true">
+
+
+                            <EditText
+                                android:id="@+id/etxEmailId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:fontFamily="OpenSansSemiBold.ttf"
+                                android:hint="Enter Your Mail Id"
+                                android:imeOptions="actionDone"
+                                android:maxLines="1"
+                                android:padding="@dimen/_8sdp"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="DONE"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

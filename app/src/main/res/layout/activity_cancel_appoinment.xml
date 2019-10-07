@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".activities.CancelAppoinmentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/notification_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutTop"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/primary">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/materialLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    app:mrl_rippleColor="@color/black"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_action_back" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/materialLayout"
+                    android:layout_toRightOf="@+id/materialLayout"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Reason for cancellation*"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/background_card"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:padding="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_down" />
+
+                <Spinner
+                    android:id="@+id/famillyMemberSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/image"
+                    android:layout_toLeftOf="@id/image"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown"
+                    tools:listitem="@layout/family_spinner_row" />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/layoutMessage"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Message*"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/etxMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@color/white"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:hint="Enter Your message here"
+                android:padding="@dimen/_50sdp" />
+            </LinearLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtRescheduleAppoinment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Would you like to Reschedule the Appointment ?"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtCancelAppoinment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary"
+            android:padding="@dimen/_10sdp"
+            android:text="CONFIRM CANCELLATION"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

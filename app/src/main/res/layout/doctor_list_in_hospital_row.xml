@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F6F6"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="4dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardUseCompatPadding="true">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/primary"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_ripplePersistent="false">
+
+        <RelativeLayout
+            android:id="@+id/iteamClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_6sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctor_specification_imageView"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ctg_doctor"
+                card_view:civ_border_color="@color/primary"
+                card_view:civ_border_width="@dimen/_1sdp" />
+
+            <LinearLayout
+                android:id="@+id/lineMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/doctor_specification_imageView"
+                android:layout_toLeftOf="@+id/materialLayoutBook"
+                android:layout_toRightOf="@+id/doctor_specification_imageView"
+                android:layout_toStartOf="@+id/materialLayoutBook"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/doctor_specilization_main_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="test"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/special"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="ss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/Education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="ss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/Experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="NA"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/materialLayoutBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/lineMain"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="bottom"
+                app:cardBackgroundColor="@color/primary"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_ripplePersistent="false">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                        android:id="@+id/bookAppoentmentbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_3sdp"
+                        android:text="@string/Book"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>
+
+
+

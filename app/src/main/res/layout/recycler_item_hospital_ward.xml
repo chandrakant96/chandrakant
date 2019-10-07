@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:id="@+id/txtWard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/greyed_out"
+        android:padding="@dimen/_10sdp"
+        android:text="AC"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_10sdp" />
+
+
+</android.support.constraint.ConstraintLayout>

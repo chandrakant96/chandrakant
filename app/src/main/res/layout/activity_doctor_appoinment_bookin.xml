@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_background"
+    android:fitsSystemWindows="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeDetails"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/primary"
+                android:visibility="visible">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:mrl_rippleAlpha="0.1"
+                    app:mrl_rippleColor="@color/rippelColor"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_action_back" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/imgBack"
+                    android:layout_toRightOf="@+id/imgBack"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/accent" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/hideLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                            android:id="@+id/txtDoctorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:fontFamily="OpenSans-Regular.ttf"
+                            android:lineSpacingExtra="@dimen/_1sdp"
+                            android:text="Choose a Hospital to available services from"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:layout_marginLeft="@dimen/_8sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:layout_marginRight="@dimen/_8sdp"
+                                android:layout_toStartOf="@id/txtdistance"
+                                android:layout_toLeftOf="@id/txtdistance"
+                                app:cardCornerRadius="@dimen/_4sdp"
+                                app:cardElevation="@dimen/_2sdp"
+                                app:cardPreventCornerOverlap="false"
+                                app:cardUseCompatPadding="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <Spinner
+                                        android:id="@+id/spinnerHospital"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:background="@null"
+                                        android:overlapAnchor="false"
+                                        android:spinnerMode="dropdown"
+                                        tools:listitem="@layout/family_spinner_row" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:padding="@dimen/_5sdp"
+                                        android:src="@drawable/ic_down" />
+
+                                </RelativeLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                android:visibility="gone"
+                                android:id="@+id/txtdistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:drawableTop="@drawable/ic_google"
+                                android:fontFamily="OpenSans-Regular.ttf"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp"
+                                android:text="0 km" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@color/divider2"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_8sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/cardTreatment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:cardBackgroundColor="@color/accent"
+                                    app:cardCornerRadius="@dimen/_4sdp"
+                                    app:cardElevation="@dimen/_2sdp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true">
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                        android:id="@+id/txtDropDownTreatment"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="@dimen/_2sdp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_8sdp"
+                                        android:text="CHOOSE \nTREATMENT/SERVICE"
+                                        android:textSize="@dimen/_10sdp"
+                                        android:visibility="visible" />
+
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:id="@+id/cardDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    app:cardCornerRadius="@dimen/_4sdp"
+                                    app:cardElevation="@dimen/_2sdp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true">
+
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                        android:id="@+id/txtDropDownCalender"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="@dimen/_2sdp"
+                                        android:background="@color/white"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_8sdp"
+                                        android:text="CHOOSE\nDATE AND TIME "
+                                        android:textSize="@dimen/_10sdp" />
+                                </android.support.v7.widget.CardView>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/accent"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:cardElevation="@dimen/_2sdp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:background="@color/white">
+
+                            <LinearLayout
+                                android:id="@+id/lineTreatment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:id="@+id/txtTitlesHide"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="TREATMENT / SERVICE"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/primary"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:padding="@dimen/_2sdp"
+                                        android:text="WHR AMOUNT"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/primary"
+                                        android:textSize="@dimen/_11sdp" />
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/edSearch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:background="@drawable/search_background"
+                                    android:drawableStart="@drawable/search"
+                                    android:drawableLeft="@drawable/search"
+                                    android:fontFamily="OpenSansRegular.ttf"
+                                    android:hint="Search Treatment / Service"
+                                    android:imeOptions="actionDone"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:lines="1"
+                                    android:padding="@dimen/_3sdp"
+                                    android:paddingStart="@dimen/_10sdp"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:visibility="visible"
+                                    tools:ignore="RtlSymmetry" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerViewSelectedTreatment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/hospitalRecycleView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layoutCalender"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <com.whr.user.com.WHR.ViewPackage.CalendarViewScrollable
+                                    android:id="@+id/calendarView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_margin="@dimen/_10sdp"
+                                    android:background="#f2f2f2"
+                                    android:scrollbars="horizontal" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:visibility="visible" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/lineTypeTime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:id="@+id/txtMorning"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_5sdp"
+                                        android:text="@string/morning"
+                                        android:textColor="@color/black" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:id="@+id/txtAfternoon"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_5sdp"
+                                        android:text="@string/afternoon"
+                                        android:textColor="@color/black" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:id="@+id/txtEvening"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:padding="@dimen/_5sdp"
+                                        android:text="Evening"
+                                        android:textColor="@color/black" />
+                                </LinearLayout>
+
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerViewTimeSlot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:id="@+id/txtBookAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/primary"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/BookAppointment"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

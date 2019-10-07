@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context=".governmentscheme.GovernmentSchemeActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/layoutClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:mrl_rippleAlpha="0.1"
+            app:mrl_rippleColor="@color/ripplecolor"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+            <RelativeLayout
+                android:id="@+id/relativeItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtSpecialization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="मुख्यमंत्री सहाय्यता निधी"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_navigate_nex" />
+
+
+            </RelativeLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider" />
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

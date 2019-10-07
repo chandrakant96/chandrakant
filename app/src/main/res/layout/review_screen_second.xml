@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/review_logo_two" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/valuetwo"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_58sdp">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtYesRevieveScreenTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/square_border_one"
+            android:text="Yes"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtNoRevieveScreenTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@drawable/square_border_one"
+            android:text="No"
+            android:textAlignment="center"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_16sdp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CentralSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@+id/imgBack"
+                android:gravity="center_vertical"
+                android:text="Central Search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/primary"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:text="@string/location"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardElevation="@dimen/_4sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/auto_complete_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:background="@null"
+                    android:drawableStart="@drawable/search"
+                    android:drawableLeft="@drawable/search"
+                    android:fontFamily="OpenSans-Regular.ttf"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/primary" />
+
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:indeterminateDrawable="@drawable/progress_icon"
+                    android:indeterminateDuration="2000"
+                    android:max="1000"
+                    android:min="0"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/progress_icon"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewCentralSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

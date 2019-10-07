@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="City"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/addressTxt"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="fdg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pin Code"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/pincodetxt"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="fdg"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

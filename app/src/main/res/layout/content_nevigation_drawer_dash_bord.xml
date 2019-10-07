@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_nevigation_drawer_dash_bord"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.NevigationDrawerDashBordActivity"
+    tools:showIn="@layout/app_bar_nevigation_drawer_dash_bord">
+
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mainlayoutone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.8" />
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/search_box_layout_centre_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_2sdp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_weight="4.2"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    app:cardElevation="@dimen/_2sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.1"
+                            app:mrl_rippleColor="@color/rippelColor"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true"
+                            app:mrl_ripplePersistent="false">
+
+                            <RelativeLayout
+                                android:layout_margin="@dimen/_5sdp"
+                                android:id="@+id/nev_doctor_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageDoctor"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_book_hospital_doctors" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/imageDoctor"
+                                    android:layout_toRightOf="@+id/imageDoctor"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/BookAppointment"
+                                        android:textColor="@color/primary_dark"
+                                        android:textSize="@dimen/_10sdp" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Book Doctors, Hospitals"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_8sdp" />
+
+                                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Appointments online"
+                                        android:textSize="@dimen/_7sdp" />
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:scaleType="fitEnd"
+                                    app:srcCompat="@drawable/ic_navigate_nex" />
+
+
+                            </RelativeLayout>
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/divider2" />
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.1"
+                            app:mrl_rippleColor="@color/rippelColor"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true"
+                            app:mrl_ripplePersistent="false">
+
+                            <RelativeLayout
+                                android:id="@+id/hospitalListlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageSurgery"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_hospital_surgery" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/imageSurgery"
+                                    android:layout_toRightOf="@+id/imageSurgery"
+                                    android:text="@string/SurgeryPackages"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:scaleType="fitEnd"
+                                    app:srcCompat="@drawable/ic_navigate_nex" />
+                            </RelativeLayout>
+
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/divider2" />
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/pathologyBooking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.1"
+                            app:mrl_rippleColor="@color/rippelColor"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true"
+                            app:mrl_ripplePersistent="false">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imageDiagnostics"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_microscope" />
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/imageDiagnostics"
+                                    android:layout_toRightOf="@+id/imageDiagnostics"
+                                    android:text="Diagnostic Centers Appointments"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:scaleType="fitEnd"
+                                    app:srcCompat="@drawable/ic_navigate_nex" />
+                            </RelativeLayout>
+
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/divider2" />
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/firstAidTips"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.1"
+                            app:mrl_rippleColor="@color/rippelColor"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true"
+                            app:mrl_ripplePersistent="false">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageFirstAid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_first_aid_kit" />
+
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/imageFirstAid"
+                                    android:layout_toRightOf="@+id/imageFirstAid"
+                                    android:text="@string/firstId"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:scaleType="fitEnd"
+                                    app:srcCompat="@drawable/ic_navigate_nex" />
+                            </RelativeLayout>
+
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:background="@color/divider2" />
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/governmentSchemes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mrl_rippleAlpha="0.1"
+                            app:mrl_rippleColor="@color/rippelColor"
+                            app:mrl_rippleDelayClick="true"
+                            app:mrl_rippleHover="true"
+                            app:mrl_rippleOverlay="true"
+                            app:mrl_ripplePersistent="false">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imgScheme"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    app:srcCompat="@drawable/ic_government_scheme" />
+
+
+                                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/imgScheme"
+                                    android:layout_toRightOf="@+id/imgScheme"
+                                    android:text="@string/schemes"
+                                    android:textColor="@color/primary_dark"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_5sdp"
+                                    android:scaleType="fitEnd"
+                                    app:srcCompat="@drawable/ic_navigate_nex" />
+                            </RelativeLayout>
+
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@color/divider2" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </ScrollView>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@color/primary"
+                android:gravity="bottom"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/rippelColor"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+                <LinearLayout
+                    android:id="@+id/EmergencyContactLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/emergency"
+                        android:drawableRight="@drawable/emergency"
+                        android:gravity="center_vertical"
+                        android:text="Click For Emergency"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

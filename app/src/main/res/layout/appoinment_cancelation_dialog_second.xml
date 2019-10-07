@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutCancel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_30sdp"
+        android:src="@drawable/ic_cancelation_second" />
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Your Appointment has been"
+        android:textColor="#212121"
+        android:textSize="@dimen/_12sdp" />
+
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="cancelled"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_12sdp" />
+
+
+</LinearLayout>

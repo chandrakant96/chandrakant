@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:background="@null"
+            android:src="@drawable/review_logo_four" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="12dp"
+            android:text="@string/valuefour"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:hint="Name"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp" />
+
+        <EditText
+            android:id="@+id/yourExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/border"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:hint="Your Experience"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_55sdp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

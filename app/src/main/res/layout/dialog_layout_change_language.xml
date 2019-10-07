@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialogCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:background="@color/primary" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@color/white" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgWhrLogo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/primary"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgWhrLogo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/RateWHRApp"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/primary"
+            app:mrl_rippleDelayClick="false"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_close_white"
+                app:civ_border_color="@color/primary"
+                app:civ_border_width="@dimen/_2sdp" />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cardView"
+            android:layout_below="@+id/txtTitle"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/primary" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:button="@drawable/check_box_selector"
+                android:fontFamily="OpenSans-Bold.ttf"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_7sdp"
+                android:text="English"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/primary" />
+
+            <CheckBox
+                android:id="@+id/checkBoxMarathi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/check_box_selector"
+                android:fontFamily="OpenSans-Bold.ttf"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_7sdp"
+                android:text="मराठी"
+                android:textSize="@dimen/_16sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/primary" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                        android:id="@+id/txtApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/Apply"
+                        android:textColor="@color/white" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

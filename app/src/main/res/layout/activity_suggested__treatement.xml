@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.whr.user.com.WHR.com.WHR.Activities.Suggested_TreatementActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3sdp">
+
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/titalName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:text="@string/DoctorName"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/divider" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_3sdp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activitySuggestTreatmentRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:mrl_rippleAlpha="0.2"
+
+
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_ripplePersistent="false">
+
+                    <Button
+                        android:id="@+id/bookAppoentmentbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/primary"
+                        android:fontFamily="OpenSans-Regular.ttf"
+                        android:text="@string/Book"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+

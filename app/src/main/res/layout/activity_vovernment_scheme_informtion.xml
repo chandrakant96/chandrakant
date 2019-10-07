@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".governmentscheme.GovernmentSchemeInformtion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@id/imgBack"
+                android:layout_toRightOf="@id/imgBack"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewOne"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/accent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerviewNgo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+        <RelativeLayout
+            android:id="@+id/layoutScheme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/layoutClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ripplecolor"
+                app:mrl_rippleDelayClick="true"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true"
+                app:mrl_ripplePersistent="false">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                    android:id="@+id/txtApply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Apply"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layoutClick"
+                android:orientation="vertical">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

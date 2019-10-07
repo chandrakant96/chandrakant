@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogCoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imgWhrLogo"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_action_whr_logo" />
+
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/primary"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/imageClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_close_white" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/hi_friends_i_discover_new_health_care_app_whr_user_app_please_download_it" />
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/primary"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_google_play" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_app_store" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                        android:id="@+id/txtSocial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/Social"
+                        android:textColor="@color/white" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_4sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                        android:id="@+id/txtContacts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/Contacts"
+                        android:textColor="@color/white" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

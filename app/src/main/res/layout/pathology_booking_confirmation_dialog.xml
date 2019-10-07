@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Please Confirm The Booking Details"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient's Name  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient's Mobile No  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtPatientMobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient's Dob  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtPatientDob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/divider2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tests Selected  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtSelectedTests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment Date  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtAppointmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTIme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment TIme  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtAppointmentTIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@color/divider2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Date  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtBookingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked By  -  "
+                android:textSize="@dimen/_11sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtBookedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:mrl_rippleAlpha="0.1"
+        app:mrl_rippleColor="@color/rippelColor"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Confirm"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

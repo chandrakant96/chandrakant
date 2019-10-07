@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_6sdp"
+    android:layout_marginLeft="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp">
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtPackageName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:text="arthoscopic surgery operative"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_12sdp"
+            app:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:padding="@dimen/_2sdp"
+                android:text="Starting from"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtMinPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="Rs.5999"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtHospital"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_2sdp"
+                android:text="09"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_2sdp"
+                android:text="Hospitals"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtDoctors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:text="03"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:text="Doctors perform this surgery"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

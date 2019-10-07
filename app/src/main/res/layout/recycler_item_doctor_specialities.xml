@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mrl_rippleAlpha="0.1"
+    app:mrl_rippleColor="@color/ripplecolor"
+    app:mrl_rippleDelayClick="true"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleOverlay="true"
+    app:mrl_ripplePersistent="false">
+
+    <RelativeLayout
+        android:id="@+id/relativeItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+            android:id="@+id/txtSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/imgNext"
+            android:layout_toLeftOf="@+id/imgNext"
+            android:text="Medicine"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+            android:id="@+id/txtIllness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSpecialization"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/imgNext"
+            android:layout_toLeftOf="@+id/imgNext"
+            android:text="(ICU)"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_10sdp" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_navigate_nex" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/txtIllness"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/divider2" />
+
+    </RelativeLayout>
+
+</com.balysv.materialripple.MaterialRippleLayout>

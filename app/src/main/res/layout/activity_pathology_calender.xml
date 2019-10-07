@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/notification_background"
+    tools:context=".booking.diagnostics.booking.activities.PathologyCalenderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                app:mrl_rippleColor="@color/ripplecolor"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:src="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@+id/imgBack"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewFirst"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/topLayout"
+            android:background="@color/accent" />
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtconfirmDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/primary"
+            android:padding="@dimen/_10sdp"
+            android:text="Confirm Date"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtconfirmDate"
+            android:layout_below="@id/viewFirst"
+            android:orientation="vertical">
+
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="Choose Preferred Date for Appoinment and WHR Team will get back to you with the timings "
+                android:textColor="@color/black" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/textWithTIme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="Choose Preferred Date and Time for Appoinment"
+                android:textColor="@color/black" />
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/layoutCalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <com.whr.user.com.WHR.ViewPackage.CalendarViewScrollable
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="#f2f2f2"
+                        android:scrollbars="horizontal" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layoutTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtMorning"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/morning"
+                            android:textColor="@color/black" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtAfternoon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/afternoon"
+                            android:textColor="@color/black" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/txtEvening"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Evening"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewTimeSlot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

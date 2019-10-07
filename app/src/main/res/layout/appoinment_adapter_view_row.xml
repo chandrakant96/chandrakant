@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/primary"
+        app:mrl_rippleDelayClick="true"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true"
+        app:mrl_ripplePersistent="false">
+
+        <Button
+            android:id="@+id/appinmentBookingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_26sdp"
+            android:background="@drawable/round_corner_black_border"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:padding="@dimen/_5sdp"
+            android:text="Button"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

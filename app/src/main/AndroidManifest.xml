@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.whr.user">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.whr.user.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"
+        tools:ignore="UniquePermission" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission
+        android:name="com.whr.user.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.whr.user.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.LOCATION_HARDWARE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.etech.medicaluser.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".com.WHR.Utils.CustomApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/whr_new_lunchar"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="icon,label">
+        <activity android:name=".governmentscheme.GovernmentSchemeInformtion"></activity>
+        <activity android:name=".governmentscheme.SchemeFormFour" />
+        <activity android:name=".governmentscheme.SchemeFormThree" />
+        <activity android:name=".governmentscheme.SchemeFormTwo" />
+        <activity android:name=".governmentscheme.SchemeFormOne" />
+        <activity android:name=".governmentscheme.GovernmentSchemeActivity" />
+        <activity android:name=".booking.diagnostics.booking.activities.PathologyPackageActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="false" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA96n_sxvri6j7qHZD6qJ31cKymLALKn6I" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.NevigationDrawerDashBordActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UserLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DashTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activities.ReferDoctorList"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".booking.doctor.booking.DoctorHospitalPackagesListActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/DashTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".activities.ReportActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.ReportViewActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.Suggested_TreatementActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.TreatmentTestDoctorPathalogyListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SuggestTestTabActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LocationFindActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pay_bill.PayBillTabActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.PrescriptionViewActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.PrescriptionHistoryActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.Paybill_PaymentActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.SuggesatNewActivityPackage.TreatmentTestDoctorListByTreatmentActitivty"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.SuggesatNewActivityPackage.SuggestTreatmentListByDoctorActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.SuggesatNewActivityPackage.TreatmentTestPathalogyListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.SuggesatNewActivityPackage.SuggesttestTreatmentActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.SuggesatNewActivityPackage.PathalogyListFragmentActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.WalletTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".com.WHR.com.WHR.Activities.BookingFromFollowupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CentralSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.DoctorSpecialtiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OtpScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.DetailDoctorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.DetailHospitalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReviewScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.DoctorAppointmentBookingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.BookingDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.HospitalDoctorPackagesListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.HospitalPackageDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.HospitalPackagesCalenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RecentTopSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.EditInfoActivity" />
+        <activity
+            android:name=".booking.PaymentDoctorActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".booking.packages.hospital.activities.NewSurgeryPackageActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.packages.hospital.activities.PackageHospitalsList"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".first_aid.activities.FirstAidActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".first_aid.activities.FirstDetailActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PaytmPaymentGatewayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddFamilyMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FamilyMemberListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddContactEmergencyActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AppointmentHistoryActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.PaymentPackageActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.BookingDetailsPackageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.doctor.booking.BookingDetailsAdmitNowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReceiptActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.NewPathalogyActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.NewPathalogyDetailsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.NewPathalogyFilterList"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.NewPathologyBookingDetailsActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.PaymentPathologyActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.PathalogyServicesAndChargesActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.PathologyCalenderActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.ThyrocareListActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".booking.diagnostics.booking.activities.PaymentThyrocareActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NewFavouriteActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CancelAppoinmentActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RescheduleActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NoInternetConnectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NoDataAvailableActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <service
+            android:name=".com.WHR.Utils.FCM.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".com.WHR.Utils.FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

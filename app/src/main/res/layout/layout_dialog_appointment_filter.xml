@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+
+    <RadioButton
+        android:id="@+id/radioUpcoming"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="OpenSans-Semibold.ttf"
+        android:padding="@dimen/_5sdp"
+        android:text="Upcoming Appointment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <RadioButton
+        android:id="@+id/radioFollowUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="OpenSans-Semibold.ttf"
+        android:padding="@dimen/_5sdp"
+        android:text="Follow Up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <RadioButton
+        android:id="@+id/radioHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="OpenSans-Semibold.ttf"
+        android:padding="@dimen/_5sdp"
+        android:text="Appointment History"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <RadioButton
+        android:id="@+id/radioPathology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="OpenSans-Semibold.ttf"
+        android:padding="@dimen/_5sdp"
+        android:text="Pathology Appointment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+    <RadioButton
+        android:id="@+id/radioAdvance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="OpenSans-Semibold.ttf"
+        android:padding="@dimen/_5sdp"
+        android:text="Pathology Appointment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

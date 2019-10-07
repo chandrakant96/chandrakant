@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    app:cardElevation="@dimen/_2sdp"
+    android:layout_marginLeft="@dimen/_6sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginRight="@dimen/_8sdp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtHospitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="OpenSans-Regular.ttf"
+            android:text="V N Desai Hospital"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_12sdp"
+            app:textAllCaps="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layoutDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_google" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                    android:id="@+id/txtDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_3sdp"
+                    android:text="2.3 km"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_toStartOf="@id/layoutDistance"
+                android:layout_toLeftOf="@id/layoutDistance"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:text="2011,above sunshine aprtment,nehru rod, santakruj,Mumbai-41105 "
+                android:textColor="#343434"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_package_icon"
+                android:drawableLeft="@drawable/ic_package_icon"
+                android:drawablePadding="@dimen/_4sdp"
+                android:text="Package starting from"
+                android:textColor="#343434"
+                android:textSize="@dimen/_10sdp" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtMinPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:text="Rs 9,999"
+                android:textColor="#343434"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtMaxPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                android:text="Rs 50,000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imafirst"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ctg_hospital"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imasecond"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ctg_hospital"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/imagethird"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ctg_hospital"
+                android:visibility="gone" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                android:id="@+id/txtMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="+3 more"
+                android:textColor="@color/primary"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

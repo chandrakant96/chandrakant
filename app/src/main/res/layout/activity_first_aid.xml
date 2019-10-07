@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".booking.doctor.booking.DoctorSpecialtiesActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/materialLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                app:mrl_rippleColor="@color/black"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="true">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:src="@drawable/ic_action_back" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/materialLayout"
+                android:layout_toRightOf="@+id/materialLayout"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/primary"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardPreventCornerOverlap="false">
+
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/search"
+                android:drawableLeft="@drawable/search"
+                android:fontFamily="OpenSans-Regular.ttf"
+                android:hint="Search for First Aid Tips"
+                android:maxLines="1"
+                android:padding="@dimen/_4sdp"
+                android:singleLine="true"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/_12sdp" />
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/accent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/notification_background">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/firstAidRecyclyview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:scrollbars="vertical" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

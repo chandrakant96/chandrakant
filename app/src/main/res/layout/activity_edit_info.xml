@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/materialLayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/primary">
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    app:mrl_rippleColor="@color/black"
+                    app:mrl_rippleDelayClick="false"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        app:srcCompat="@drawable/ic_action_back" />
+
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgBack"
+                    android:layout_toRightOf="@+id/imgBack"
+                    android:gravity="center_vertical"
+                    android:text="Edit Info"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtBrand"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/accent" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/materialLayout"
+                android:layout_below="@+id/txtBrand"
+                android:fillViewport="true"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageUserProfile"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/user_blue"
+                        app:civ_border_color="@color/greyed_out"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="@dimen/_1sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Upload Profile Picture"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Your Name *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <EditText
+                        android:id="@+id/edName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/background_card"
+                        android:fontFamily="OpenSans-Semibold.ttf"
+                        android:hint="Enter Your Name"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender *"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radioButtonMale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:checked="true"
+                                android:fontFamily="OpenSans-Bold.ttf"
+                                android:text="@string/Male"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <RadioButton
+                                android:id="@+id/radioFemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="OpenSans-Bold.ttf"
+                                android:text="@string/Female"
+                                android:textSize="@dimen/_13sdp" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Your Date of Birth *"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <EditText
+                        android:id="@+id/edDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/background_card"
+                        android:cursorVisible="false"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:drawableRight="@drawable/ic_calendar"
+                        android:editable="false"
+                        android:ems="10"
+                        android:fontFamily="OpenSans-Semibold.ttf"
+                        android:hint="Enter Your Date of Birth"
+                        android:padding="@dimen/_6sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group *"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/background_card"
+                            android:padding="@dimen/_3sdp">
+
+                            <Spinner
+                                android:id="@+id/spinnerBloodGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:overlapAnchor="false"
+                                android:spinnerMode="dropdown"
+                                tools:listitem="@layout/family_spinner_row" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_down" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Mobile No.*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <EditText
+                        android:id="@+id/edMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/background_card"
+                        android:fontFamily="OpenSans-Semibold.ttf"
+                        android:hint="Enter Your Mobile No."
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/greyed_out"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Email Id*"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <EditText
+                        android:id="@+id/edEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/background_card"
+                        android:ems="10"
+                        android:fontFamily="OpenSans-Regular.ttf"
+                        android:hint="@string/EnterEmailId"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        android:visibility="gone" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_card"
+                        android:hint=""
+                        android:visibility="gone"
+                        app:hintAnimationEnabled="false"
+                        app:hintEnabled="false"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/primary">
+
+                        <EditText
+                            android:id="@+id/edPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:fontFamily="OpenSans-Regular.ttf"
+                            android:hint="@string/password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:padding="@dimen/_8sdp"
+                            android:singleLine="true"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/materialLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:mrl_rippleAlpha="0.2"
+            app:mrl_rippleColor="@color/black"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleOverlay="true"
+            app:mrl_ripplePersistent="false">
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:id="@+id/txtSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/Save"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

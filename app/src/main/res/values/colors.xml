@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1e3d6b</color>
+    <color name="primary_dark">#001840</color>
+    <color name="accent">#49c0b6</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="divider2">#FFC9C8C8</color>
+    <color name="divider3">#FFC9C8C8</color>
+    <color name="ripplecolor">#506ec7</color>
+    <color name="ucrop_color_toolbar">#00baf2</color>
+    <color name="ucrop_color_statusbar">#03a9f4</color>
+    <color name="addanothercolor">#dfe5e6</color>
+    <color name="calendar_highlighted_day_bg">#B6B6B6</color>
+    <color name="calendar_selected_day_bg">#5677fc</color>
+    <color name="calendar_active_month_bg">#FFFFFF</color>
+    <color name="calendar_inactive_month_bg">#263238</color>
+    <color name="notification_background">#e6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#28ffffff</color>
+    <color name="black">#343434</color>
+    <color name="rippelColor">#506ec7</color>
+    <color name="primary_500">#3F51B5</color>
+    <color name="primary_700">#303F9F</color>
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="greyed_out">#c7c7c7</color>
+    <color name="grey">#fafafa</color>
+    <color name="colorPrimary">#3b5bb3</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#ea5d88</color>
+    <color name="bg_view_sms">#ffd423</color>
+    <color name="bg_view_otp">#fc6d38</color>
+    <color name="profile_background">#9900baf2</color>
+    <color name="primaryt">#8c00baf2</color>
+    <array name="array_dot_active">
+        <item>#00baf2</item>
+        <item>#00baf2</item>
+        <item>#00baf2</item>
+        <item>#00baf2</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>#8c00baf2</item>
+        <item>#8c00baf2</item>
+        <item>#8c00baf2</item>
+        <item>#8c00baf2</item>
+    </array>
+</resources>

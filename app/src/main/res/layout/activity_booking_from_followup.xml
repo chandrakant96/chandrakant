@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.whr.user.com.WHR.com.WHR.Activities.BookingFromFollowupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar_new"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doctor_image"
+                    android:layout_width="@dimen/_45sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:src="@drawable/user_blue"
+                    app:civ_border_color="@color/primary"
+                    app:civ_border_width="@dimen/_2sdp" />
+
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    app:mrl_rippleAlpha="0.2"
+                    app:mrl_rippleColor="@color/primary"
+                    app:mrl_rippleDelayClick="true"
+                    app:mrl_rippleHover="true"
+                    app:mrl_rippleOverlay="true"
+                    app:mrl_ripplePersistent="false">
+
+                    <LinearLayout
+                        android:id="@+id/category_DetailsSecction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:id="@+id/doctorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:id="@+id/hospitalName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:id="@+id/booking_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:id="@+id/followuptimetxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSansRegular
+                            android:id="@+id/usernameText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@color/divider" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:id="@+id/treatment_checkboxbookText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="6"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:text="@string/TreatmentName"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_14sdp" />
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/hospitalListRecycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.5"
+                    android:scrollbars="vertical" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_32sdp"
+                        app:mrl_rippleAlpha="0.2"
+                        app:mrl_rippleColor="@color/black"
+                        app:mrl_rippleDelayClick="true"
+                        app:mrl_rippleHover="true"
+                        app:mrl_rippleOverlay="true"
+                        app:mrl_ripplePersistent="false">
+
+
+                        <Button
+                            android:id="@+id/submitButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/primary"
+                            android:fontFamily="OpenSans-Regular.ttf"
+                            android:text="@string/Book"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp" />
+                    </com.balysv.materialripple.MaterialRippleLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primary">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_action_back" />
+
+            <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/imgBack"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Add a review"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txtSubmit"
+            android:layout_below="@+id/relativeToolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp">
+
+                <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Tell us about your experience with doctor"
+                    android:textSize="@dimen/_12sdp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="@dimen/_5sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text=" 1) Would you like to recommend this doctor ?"
+                            android:textColor="@color/black" />
+
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_30sdp"
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text=" 2) Was it value for money ? "
+                            android:textColor="@color/black" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Yes" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_30sdp"
+                                android:text="No" />
+
+
+                        </RadioGroup>
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text=" 3) Things To Be improved ? "
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:text="Treatment Satisfaction" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:text="Explanation with Health Issue" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:text="Treatment Satisfaction" />
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp"
+                            android:text=" 4) Tell us about your experience"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/border"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:gravity="left"
+                            android:hint="Start Typing Here"
+                            android:lines="4"
+                            android:padding="@dimen/_5sdp" />
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Your Name *"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/border"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:hint="Enter Your Name"
+                            android:padding="@dimen/_7sdp" />
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Mobile Name *"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/border"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:hint="Mobile Number"
+                            android:padding="@dimen/_7sdp" />
+
+
+                        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:text="Email Id"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:background="@drawable/border"
+                            android:fontFamily="Opens-Bold.ttf"
+                            android:hint="Mobile Number"
+                            android:padding="@dimen/_7sdp" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.whr.user.com.WHR.ViewPackage.OpenSans_Bold
+            android:id="@+id/txtSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

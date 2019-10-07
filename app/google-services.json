@@ -1,0 +1,81 @@
+{
+  "project_info": {
+    "project_number": "831238808649",
+    "firebase_url": "https://whruser-1517052929366.firebaseio.com",
+    "project_id": "whruser-1517052929366",
+    "storage_bucket": "whruser-1517052929366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831238808649:android:22b12bd5adc9de34",
+        "android_client_info": {
+          "package_name": "com.whr.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831238808649-0sfjuc6k1p4udl31nmem1hp9h97qn7vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whr.user",
+            "certificate_hash": "cd4993e320dd984ebe5e9918ee47a70355fcd668"
+          }
+        },
+        {
+          "client_id": "831238808649-3cih5tr643pg5en931lck19km14rvjrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whr.user",
+            "certificate_hash": "b78b2548d6f87f3e9c1a465760697f137363111f"
+          }
+        },
+        {
+          "client_id": "831238808649-uclf3ljbilgu36pi8ma5fnrh8q2i5ph1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.whr.user",
+            "certificate_hash": "8f6074a0060bdfb4aff291999052cf11efe41b7a"
+          }
+        },
+        {
+          "client_id": "831238808649-28tr9c66dnvmcuv8gjkohqmmmaasvu0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzuSH9baIA482GBiXxnhOkMz5wSjJO0u4"
+        },
+        {
+          "current_key": "AIzaSyBnAf0NAmj7adV5WAlSnDHw2988HATEwbU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831238808649-28tr9c66dnvmcuv8gjkohqmmmaasvu0a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "831238808649-r03p9efp80bschek6pg90521scdlq7nr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.whr.User"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
